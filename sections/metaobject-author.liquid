@@ -1,6 +1,35 @@
+<div>
+  <h1>Author</h1>
+  <p>{{ section.settings.author.name.value }}</p>
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'related_authors' %}
+        <div>
+          <h2>Related authors</h2>
+          <ul>
+            {% for author in block.settings.authors %}
+              <li>{{ author.name.value }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+    {% endcase %}
+  {% endfor %}
+</div>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Authors",
+  "settings": [
+    { "id": "author", "label": "Author", "type": "metaobject", "metaobject_type": "author" }
+  ],
+  "blocks": [
+    {
+      "name": "Related Authors",
+      "type": "related_authors",
+      "settings": [
+        { "id": "authors", "label": "Authors", "type": "metaobject_list", "metaobject_type": "author" }
+      ]
+    }
+  ],
+  "presets": [{"name": "Metaobject Author"}]
+}
 {% endschema %}
