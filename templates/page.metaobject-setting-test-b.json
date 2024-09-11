@@ -52,8 +52,21 @@
     },
     "metaobject_author_VraPqg": {
       "type": "metaobject-author",
+      "blocks": {
+        "related_authors_7VDeHf": {
+          "type": "related_authors",
+          "settings": {
+            "authors": [
+
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "related_authors_7VDeHf"
+      ],
       "settings": {
-        "author": ""
+        "author": "ben"
       }
     },
     "metaobject_form_submission_DapmJE": {
