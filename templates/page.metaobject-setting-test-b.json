@@ -106,6 +106,15 @@
       "settings": {
         "author": ""
       }
+    },
+    "metaobject_form_submission_QH4N8A": {
+      "type": "metaobject-form-submission",
+      "settings": {
+        "form": "",
+        "forms": [
+
+        ]
+      }
     }
   },
   "order": [
@@ -113,6 +122,7 @@
     "metaobject_color_RhdwG7",
     "metaobject_author_VraPqg",
     "metaobject_author_cMFk6P",
-    "metaobject_author_mftbyk"
+    "metaobject_author_mftbyk",
+    "metaobject_form_submission_QH4N8A"
   ]
 }
