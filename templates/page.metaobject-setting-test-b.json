@@ -87,12 +87,32 @@
       "settings": {
         "author": ""
       }
+    },
+    "metaobject_author_mftbyk": {
+      "type": "metaobject-author",
+      "blocks": {
+        "related_authors_FRcHKA": {
+          "type": "related_authors",
+          "settings": {
+            "authors": [
+
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "related_authors_FRcHKA"
+      ],
+      "settings": {
+        "author": ""
+      }
     }
   },
   "order": [
     "group",
     "metaobject_color_RhdwG7",
     "metaobject_author_VraPqg",
-    "metaobject_author_cMFk6P"
+    "metaobject_author_cMFk6P",
+    "metaobject_author_mftbyk"
   ]
 }
