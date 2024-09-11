@@ -84,6 +84,25 @@
 
         ]
       }
+    },
+    "metaobject_author_VmyfVw": {
+      "type": "metaobject-author",
+      "blocks": {
+        "related_authors_Wa3JdJ": {
+          "type": "related_authors",
+          "settings": {
+            "authors": [
+
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "related_authors_Wa3JdJ"
+      ],
+      "settings": {
+        "author": "{{ page.metafields.custom.author.value }}"
+      }
     }
   },
   "order": [
@@ -91,6 +110,7 @@
     "metaobject_color_RhdwG7",
     "metaobject_author_cMFk6P",
     "metaobject_form_submission_QH4N8A",
-    "metaobject_form_submission_NwQV7E"
+    "metaobject_form_submission_NwQV7E",
+    "metaobject_author_VmyfVw"
   ]
 }
