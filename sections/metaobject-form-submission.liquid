@@ -1,6 +1,28 @@
+<div>
+  <h1>Form Submissions</h1>
+  <h2>Featured</h2>
+  {% if section.settings.form != blank -%}
+    <p>
+      {{ section.settings.form.first_name.value }}
+      {{ section.settings.form.email.value }}
+    </p>
+  {% endif %}
+  <ul>
+    {% for form in section.settings.forms %}
+      <li>
+        {{ section.settings.form.first_name.value }}
+        {{ section.settings.form.email.value }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Form Submission",
+  "settings": [
+    { "id": "form", "label": "Form Submission", "type": "metaobject", "metaobject_type": "app--6171699--shopify-forms176826" },
+    { "id": "forms", "label": "Form Submissions", "type": "metaobject_list", "metaobject_type": "app--6171699--shopify-forms176826" }
+  ],
+  "presets": [{"name": "Metaobject Form Submission"}]
+}
 {% endschema %}
