@@ -68,21 +68,11 @@
       "settings": {
         "author": "ben"
       }
-    },
-    "metaobject_form_submission_DapmJE": {
-      "type": "metaobject-form-submission",
-      "settings": {
-        "form": "",
-        "forms": [
-
-        ]
-      }
     }
   },
   "order": [
     "group",
     "metaobject_color_RhdwG7",
-    "metaobject_author_VraPqg",
-    "metaobject_form_submission_DapmJE"
+    "metaobject_author_VraPqg"
   ]
 }
