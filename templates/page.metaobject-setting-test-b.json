@@ -17,7 +17,11 @@
           "settings": {
             "text": "<p>This template is not available in the Theme blocks developer preview.<\/p>",
             "text_style": "",
-            "alignment": "center"
+            "alignment": "center",
+            "size": {
+            },
+            "spacing": {
+            }
           }
         }
       },
@@ -26,16 +30,46 @@
       ],
       "settings": {
         "spacing": {
-          "padding": "100px 0px"
+          "padding-block-start": "100px",
+          "padding-inline-end": "0px",
+          "padding-block-end": "100px",
+          "padding-inline-start": "0px"
         },
         "layout": {
           "justify-content": "center"
         },
         "color_scheme": "scheme-2"
       }
+    },
+    "metaobject_color_RhdwG7": {
+      "type": "metaobject-color",
+      "settings": {
+        "color": "",
+        "colors": [
+
+        ]
+      }
+    },
+    "metaobject_author_VraPqg": {
+      "type": "metaobject-author",
+      "settings": {
+        "author": ""
+      }
+    },
+    "metaobject_form_submission_DapmJE": {
+      "type": "metaobject-form-submission",
+      "settings": {
+        "form": "",
+        "forms": [
+
+        ]
+      }
     }
   },
   "order": [
-    "group"
+    "group",
+    "metaobject_color_RhdwG7",
+    "metaobject_author_VraPqg",
+    "metaobject_form_submission_DapmJE"
   ]
 }
