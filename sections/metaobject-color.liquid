@@ -1,0 +1,30 @@
+<div>
+  <h1>Colour</h1>
+  <h2>Featured</h2>
+  {% if section.settings.color != blank %}
+    <div>
+      <p>{{ section.settings.color.label.value }}</p>
+      <div style="height: 64px; width: 64px; background: {{ section.settings.color.color.value | color_to_hex }}"></div>
+      {{ section.settings.color.image | metafield_tag }}
+    </div>
+  {% endif %}
+  <ul>
+    {% for color in section.settings.colors %}
+      <div>
+        <p>{{ color.label.value }}</p>
+        <div style="height: 64px; width: 64px; background: {{ color.color.value | color_to_hex }}"></div>
+        {{ color.image | metafield_tag }}
+      </div>
+    {% endfor %}
+  </ul>
+</div>
+{% schema %}
+{
+  "name": "Metaobject Color",
+  "settings": [
+    { "id": "color", "label": "Color", "type": "metaobject", "metaobject_type": "shopify--color-pattern" },
+    { "id": "colors", "label": "Colors", "type": "metaobject_list", "metaobject_type": "shopify--color-pattern" }
+  ],
+  "presets": [{"name": "Metaobject Color"}]
+}
+{% endschema %}
