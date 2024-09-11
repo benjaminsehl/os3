@@ -68,11 +68,31 @@
       "settings": {
         "author": "ben"
       }
+    },
+    "metaobject_author_cMFk6P": {
+      "type": "metaobject-author",
+      "blocks": {
+        "related_authors_TY8HLW": {
+          "type": "related_authors",
+          "settings": {
+            "authors": [
+
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "related_authors_TY8HLW"
+      ],
+      "settings": {
+        "author": ""
+      }
     }
   },
   "order": [
     "group",
     "metaobject_color_RhdwG7",
-    "metaobject_author_VraPqg"
+    "metaobject_author_VraPqg",
+    "metaobject_author_cMFk6P"
   ]
 }
