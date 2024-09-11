@@ -50,34 +50,13 @@
         ]
       }
     },
-    "metaobject_author_VraPqg": {
-      "type": "metaobject-author",
-      "blocks": {
-        "related_authors_7VDeHf": {
-          "type": "related_authors",
-          "settings": {
-            "authors": [
-              "ben"
-            ]
-          }
-        }
-      },
-      "block_order": [
-        "related_authors_7VDeHf"
-      ],
-      "settings": {
-        "author": "ben"
-      }
-    },
     "metaobject_author_cMFk6P": {
       "type": "metaobject-author",
       "blocks": {
         "related_authors_TY8HLW": {
           "type": "related_authors",
           "settings": {
-            "authors": [
-
-            ]
+            "authors": "{{ page.metafields.custom.authors.value }}"
           }
         }
       },
@@ -85,26 +64,7 @@
         "related_authors_TY8HLW"
       ],
       "settings": {
-        "author": ""
-      }
-    },
-    "metaobject_author_mftbyk": {
-      "type": "metaobject-author",
-      "blocks": {
-        "related_authors_FRcHKA": {
-          "type": "related_authors",
-          "settings": {
-            "authors": [
-
-            ]
-          }
-        }
-      },
-      "block_order": [
-        "related_authors_FRcHKA"
-      ],
-      "settings": {
-        "author": ""
+        "author": "{{ page.metafields.custom.author.value }}"
       }
     },
     "metaobject_form_submission_QH4N8A": {
@@ -129,9 +89,7 @@
   "order": [
     "group",
     "metaobject_color_RhdwG7",
-    "metaobject_author_VraPqg",
     "metaobject_author_cMFk6P",
-    "metaobject_author_mftbyk",
     "metaobject_form_submission_QH4N8A",
     "metaobject_form_submission_NwQV7E"
   ]
