@@ -15,12 +15,12 @@
       width="20"
       height="20"
       viewBox="0 0 20 20"
-      {{ asdf }}
+      {{ block.shopify_attributes }}
     >
       {%- render 'icon', icon: block.settings.icon -%}
     </svg>
   {%- endif -%}
-  {{ block.settings.label }}
+  {{ asdf }}
 </a>
 
 {% schema %}
